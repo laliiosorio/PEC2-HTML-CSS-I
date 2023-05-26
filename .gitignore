@@ -1,0 +1,11 @@
+
+/package-lock.json
+# dependencies
+/node_modules
+
+
+.env
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache

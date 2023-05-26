@@ -1,0 +1,154 @@
+/* CATEGORIES */
+
+.catgeories {
+    margin-top: 2em;
+}
+
+.catgeories__title {
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.submenu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.submenu__list li {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--primary);
+}
+
+.submenu__list li a {
+    margin-left: 4px;
+    color: var(--darkGreen);
+}
+
+.list__card {
+    margin-bottom: 1.5em;
+}
+
+.card__header h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--orange);
+    margin-bottom: 8px;
+}
+
+.card__header p {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.card__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__description img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card__description p {
+    font-size: 13px;
+    margin: 14px 0 8px;
+}
+
+.card__description a {
+    font-size: 12px;
+    color: var(--orange);
+}
+
+@media (hover: hover) {
+    .card__description img:hover {
+        box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.55);
+    }
+
+    .submenu__list li a:hover {
+        color: var(--primary);
+    }
+
+    .card__description a:hover {
+        color: var(--primary);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .categories__list {
+        margin: 1em 0 3em;
+    }
+
+    .list__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card__header {
+        width: 30%;
+    }
+
+    .card__header p {
+        max-width: 115px;
+    }
+
+    .card__description {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .description__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description__img img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categories__submenu {
+        width: 20%;
+        margin-top: 1em;
+    }
+
+    .submenu__list {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .submenu__list span {
+        display: none;
+    }
+
+    .categories__list {
+        width: 75%;
+    }
+
+    .description__img {
+        width: 220px;
+        height: 220px;
+    }
+}

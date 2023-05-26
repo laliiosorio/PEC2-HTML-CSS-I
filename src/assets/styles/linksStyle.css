@@ -1,0 +1,30 @@
+.links {
+    max-width: 1080px;
+    min-height: 85vh;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.links h1 {
+    text-align: center;
+    margin: 3em 0 1.5em;
+}
+
+
+.nested-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-title-icon {
+    margin-bottom: 1em;
+}
+
+.inside-list {
+    margin-top: 8px;
+    padding: 0 60px;
+}
+
+.inside-list li {
+    margin-bottom: 12px;
+}

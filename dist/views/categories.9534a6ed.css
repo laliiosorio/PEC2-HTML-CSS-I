@@ -1,0 +1,150 @@
+.catgeories {
+  margin-top: 2em;
+}
+
+.catgeories__title {
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.submenu__list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.submenu__list li {
+  color: var(--primary);
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.submenu__list li a {
+  color: var(--darkGreen);
+  margin-left: 4px;
+}
+
+.list__card {
+  margin-bottom: 1.5em;
+}
+
+.card__header h1 {
+  color: var(--orange);
+  margin-bottom: 8px;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.card__header p {
+  margin-bottom: 1em;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.card__description {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.card__description img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card__description p {
+  margin: 14px 0 8px;
+  font-size: 13px;
+}
+
+.card__description a {
+  color: var(--orange);
+  font-size: 12px;
+}
+
+@media (hover: hover) {
+  .card__description img:hover {
+    box-shadow: 1px 10px 25px #0000008c;
+  }
+
+  .submenu__list li a:hover, .card__description a:hover {
+    color: var(--primary);
+  }
+}
+
+@media screen and (width >= 600px) {
+  .categories__list {
+    margin: 1em 0 3em;
+  }
+
+  .list__card {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .card__header {
+    width: 30%;
+  }
+
+  .card__header p {
+    max-width: 115px;
+  }
+
+  .card__description {
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .description__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .description__img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .categories__wrapper {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .categories__submenu {
+    width: 20%;
+    margin-top: 1em;
+  }
+
+  .submenu__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submenu__list span {
+    display: none;
+  }
+
+  .categories__list {
+    width: 75%;
+  }
+
+  .description__img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/*# sourceMappingURL=categories.9534a6ed.css.map */
