@@ -1,7 +1,4 @@
 /* DETAIL PAGES */
-.detail__header {
-    /* display: flex; */
-}
 
 .detail__header img {
     display: none;
@@ -39,16 +36,16 @@
     flex-direction: column;
 }
 
-.detail__img{
-    width:  min(100%, 440px);
+.detail__img {
+    width: min(100%, 440px);
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto 2em;
 }
 
-.detail__img img{
-    width:  100%;
+.detail__img img {
+    width: 100%;
     border-radius: 12px;
 }
 
