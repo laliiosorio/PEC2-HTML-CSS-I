@@ -261,8 +261,8 @@ a {
 
 .submenu__list li {
   color: var(--orange);
-  margin: 0 0 8px;
-  font-size: 12px;
+  margin: 12px 0;
+  font-size: 14px;
   font-weight: 700;
 }
 

@@ -28,7 +28,7 @@
     text-align: center;
     margin: 0.5em 0 0;
     font-weight: 800;
-    color: var(--yellow);
+    color: var(--white);
 }
 
 .detail__text {
@@ -46,6 +46,8 @@
 
 .detail__img img {
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 12px;
 }
 

@@ -24,7 +24,7 @@
 
 .detail__title p {
   text-align: center;
-  color: var(--yellow);
+  color: var(--white);
   margin: .5em 0 0;
   font-size: 18px;
   font-weight: 800;
@@ -45,6 +45,8 @@
 
 .detail__img img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 12px;
 }
 
