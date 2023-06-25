@@ -1,4 +1,35 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap";
+@font-face {
+  font-family: ralewaysemibold;
+  src: url("raleway-semibold-webfont.55dae4b8.woff2") format("woff2"), url("raleway-semibold-webfont.436e886e.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ralewaymedium;
+  src: url("raleway-medium-webfont.33f3514c.woff2") format("woff2"), url("raleway-medium-webfont.62956a38.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ralewayregular;
+  src: url("raleway-regular-webfont.96292ead.woff2") format("woff2"), url("raleway-regular-webfont.6ba04ae5.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ralewaythin;
+  src: url("raleway-thin-webfont.d7537419.woff2") format("woff2"), url("raleway-thin-webfont.047fd7e3.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --white: #fff;
   --typography: #292931;
@@ -19,7 +50,7 @@
 
 body {
   color: var(--typography);
-  font-family: Inter, sans-serif;
+  font-family: ralewayregular, -apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 main {
