@@ -1,3 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --white: #ffffff;
+    --typography: #292931;
+    --grey: #f2f2f6;
+    --primary: #86973a;
+    --secondary: #3b651a;
+    --darkGreen: #254907;
+    --yellow: #f3b05a;
+    --orange: #f4874b;
+    --darkOrange: #f46a4e;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    color: var(--typography);
+    font-family: 'Inter', sans-serif;
+}
+
+
+main {
+    padding: 0 1em;
+    max-width: 1080px;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 3em;
+    }
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.nav-bar svg {
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+}
+
+.nav-bar>.nav-bar__btn {
+    display: none;
+}
+
+.nav-bar>.nav-bar__links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+}
+
+.nav-bar>.nav-bar__links>a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav-bar>.nav-bar__links>a:hover {
+    color: var(--darkGreen);
+    font-weight: 600;
+}
+
+.nav-bar>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav-bar {
+        height: 60px;
+    }
+
+    .nav-bar svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-bar>.nav-bar__btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav-bar>.nav-bar__btn>label {
+        width: 60px;
+        height: 60px;
+        padding: 18px 0 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar>.nav-bar__btn>label:hover,
+    .nav-bar #nav-check:checked~.nav-bar__btn>label {
+        background-color: var(--darkGreen);
+    }
+
+    .nav-bar>.nav-bar__btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav-bar>.nav-bar__links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: var(--secondary);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 60px;
+        left: 0px;
+    }
+
+    .nav-bar>.nav-bar__links>a {
+        display: block;
+        width: 100%;
+        padding: 1em 3em;
+    }
+
+    .nav-bar>#nav-check:not(:checked)~.nav-bar__links {
+        height: 0px;
+    }
+
+    .nav-bar>#nav-check:checked~.nav-bar__links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+/* FOOTER */
+
+.footer-pages {
+    width: 100%;
+    background: var(--darkGreen);
+}
+
+.pages__data {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--white);
+    padding: 2em 3em;
+    margin: 0 auto;
+    gap: 2em;
+}
+
+.pages__data a {
+    color: var(--white);
+}
+
+.pages__data a:hover {
+    color: var(--yellow);
+}
+
+.personal-info,
+.principal-pages,
+.categories-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: start;
+}
+
+.personal-info svg {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+    .pages__data {
+        flex-direction: row;
+    }
+}
+
+
+/* General styles */
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+/* NAV DETAIL */
+
+.detail__submenu {
+    margin: 1em 0 2em;
+}
+
+.submenu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.submenu__list li {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--orange);
+}
+
+.submenu__list li a {
+    margin-left: 4px;
+    color: var(--darkOrange);
+}
+
+.submenu__list span {
+    margin: 0 4px;
+}
+
+@media (hover: hover) {
+    .submenu__list li a:hover {
+        color: var(--yellow);
+    }
+}
+
 /* PORTADA */
 
 .home-hero {
