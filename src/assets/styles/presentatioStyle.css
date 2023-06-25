@@ -40,7 +40,7 @@
     color: var(--white);
 }
 
-.text-p{
+.text-p {
     color: var(--orange) !important;
     margin-bottom: 1em;
 }
@@ -111,6 +111,36 @@
     opacity: 0.7;
 }
 
+/* --- Progress Bar --- */
+
+.carousel-progress {
+    position: relative;
+    z-index: 1 !important;
+    max-width: 1080px;
+    height: 8px;
+    margin: -8px auto;
+    background-color: var(--primary);
+}
+
+.progress {
+    position: absolute;
+    height: 8px;
+    background-color: var(--secondary);
+    animation-name: progress;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
 
 @media (min-width: 768px) {
     .presentation__header {
