@@ -22,9 +22,9 @@
 }
 
 .submenu__list li {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
-    margin: 0 0 8px;
+    margin: 0 0 14px;
     color: var(--primary);
 }
 

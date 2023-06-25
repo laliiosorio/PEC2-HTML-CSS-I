@@ -39,12 +39,12 @@
     --white: #ffffff;
     --typography: #292931;
     --grey: #f2f2f6;
-    --primary: #86973a;
-    --secondary: #3b651a;
+    --primary: #4C5C19;
+    --secondary: #376219;
     --darkGreen: #254907;
-    --yellow: #f3b05a;
-    --orange: #f4874b;
-    --darkOrange: #f46a4e;
+    --yellow: #83480C;
+    --orange: #93370B;
+    --darkOrange: #A9230A;
 
 }
 
@@ -218,6 +218,10 @@ a {
 
 .pages__data a:hover {
     color: var(--yellow);
+}
+
+.pages__data h2{
+    font-size: 16px;
 }
 
 .personal-info,

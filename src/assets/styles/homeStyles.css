@@ -78,6 +78,7 @@
     font-size: 20px;
     font-weight: 500;
     margin-top: 12px;
+    z-index: 20;
 }
 
 .body__quote {

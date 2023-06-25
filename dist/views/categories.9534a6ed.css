@@ -21,8 +21,8 @@
 
 .submenu__list li {
   color: var(--primary);
-  margin: 0 0 8px;
-  font-size: 12px;
+  margin: 0 0 14px;
+  font-size: 14px;
   font-weight: 700;
 }
 
