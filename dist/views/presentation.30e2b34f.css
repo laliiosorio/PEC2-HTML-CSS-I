@@ -3,7 +3,9 @@
   max-width: 1080px;
   min-height: 30vh;
   text-align: center;
-  background: url("../8.98913565.webp") center / cover;
+  background-size: cover;
+  background-color: var(--darkGreen);
+  background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -34,7 +36,7 @@
   font-size: 34px;
 }
 
-.header__text h4 {
+.header__text h2 {
   text-align: center;
   color: var(--orange);
 }
@@ -74,6 +76,12 @@
   height: inherit;
   object-fit: cover;
   border-radius: 20px;
+}
+
+@media screen and (width >= 600px) {
+  .presentation__header {
+    background: url("../8.98913565.webp");
+  }
 }
 
 .swiper-slide img {
