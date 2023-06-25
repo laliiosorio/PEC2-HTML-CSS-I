@@ -40,6 +40,11 @@
     color: var(--white);
 }
 
+.text-p{
+    color: var(--orange);
+    margin-bottom: 1em;
+}
+
 .header__lottie {
     display: none;
 }
