@@ -12,7 +12,7 @@
 .home-hero__bg-one {
   width: 100%;
   height: 100%;
-  background: url("13.f924fe79.jpg") center / cover;
+  background: url("13.0941b68f.webp") center / cover;
   position: absolute;
 }
 
@@ -105,7 +105,7 @@
     width: 100%;
     height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
-    background: url("8.e3f5b566.png") center / cover;
+    background: url("8.98913565.webp") center / cover;
     transition: all .6s;
     display: block;
     position: absolute;
