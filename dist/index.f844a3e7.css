@@ -168,16 +168,23 @@ a {
   .nav-bar > .nav-bar__links > a {
     width: 100%;
     padding: 1em 3em;
-    display: block;
   }
 
   .nav-bar > #nav-check:not(:checked) ~ .nav-bar__links {
     height: 0;
   }
 
+  .nav-bar > #nav-check:not(:checked) ~ .nav-bar__links > a {
+    display: none;
+  }
+
   .nav-bar > #nav-check:checked ~ .nav-bar__links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+
+  .nav-bar > #nav-check:checked ~ .nav-bar__links > a {
+    display: block;
   }
 }
 
