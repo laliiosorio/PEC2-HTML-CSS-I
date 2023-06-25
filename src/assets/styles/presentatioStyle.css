@@ -37,7 +37,7 @@
 
 .header__text h2 {
     text-align: center;
-    color: var(--orange);
+    color: var(--white);
 }
 
 .header__lottie {
@@ -108,7 +108,7 @@
 
 /* --- Progress Bar --- */
 
-.carousel-progress {
+/* .carousel-progress {
     position: relative;
     z-index: 1 !important;
     max-width: 1080px;
@@ -135,7 +135,7 @@
     to {
         width: 100%;
     }
-}
+} */
 
 @media (min-width: 768px) {
     .presentation__header {
