@@ -87,7 +87,7 @@
 .detail__video figcaption {
     text-align: start;
     font-size: 11px;
-    margin: 0;
+    margin: 1em 0;
 }
 
 @media screen and (min-width: 600px) {
