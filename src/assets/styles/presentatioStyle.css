@@ -41,7 +41,7 @@
 }
 
 .text-p{
-    color: var(--orange);
+    color: var(--orange) !important;
     margin-bottom: 1em;
 }
 
